@@ -9,12 +9,12 @@ import random
 
 print("What is the username of your pc?")
 user = input()
-print("Press enter to start the bot")
+print("""Press "q" to start the bot""")
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users' + '\\' + user + r'\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 environ['OMP_THREAD_LIMIT'] = '1'
 
 #press enter to start
-if read_key() == "enter":
+if read_key() == "q":
 
 	while True:
 
